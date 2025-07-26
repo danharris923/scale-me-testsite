@@ -1,0 +1,24 @@
+{
+  "name": "scale-me-testsite",
+  "version": "1.0.0",
+  "description": "Affiliate marketing site that connects to scraper API",
+  "main": "index.html",
+  "scripts": {
+    "setup": "node setup-api.js",
+    "test-api": "curl $SCRAPER_API_URL/products || curl http://localhost:8000/products",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "affiliate",
+    "marketing",
+    "scraper",
+    "api",
+    "vercel"
+  ],
+  "author": "danharris923",
+  "license": "MIT"
+}
